@@ -6,15 +6,13 @@ fn main() {
 }
 
 fn extract_charset(input: &str) -> String {
-    let mut charset : Vec<char> = Vec::new();
+    let mut charset : String = String::new();
 
     for character in input.chars() {
-        if !charset.contains(&character) {
+        if !charset.contains(character) {
             charset.push(character);
         }
     }
 
-    let output : String = charset.into_iter().collect::<String>();
-
-    output
+    charset
 }
