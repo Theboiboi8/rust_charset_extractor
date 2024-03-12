@@ -5,6 +5,7 @@ fn main() {
     println!("Found charset {:#?}", extract_charset(input.as_str()));
 }
 
+/// Returns a [`String`] of every unique character in the input [`&str`] in the order they appear
 fn extract_charset(input: &str) -> String {
     let mut charset : String = String::new();
 
