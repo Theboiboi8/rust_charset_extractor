@@ -1,4 +1,5 @@
 # Rust Character Set Extractor
+
 Takes a plaintext .txt file and returns all unique characters used in the file, in the order they appear.
 ---
 ## Usage
