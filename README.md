@@ -9,7 +9,7 @@ Case-sensitive, optionally convert to either uppercase or lowercase with `--uppe
 Use with `cargo run` or use `cargo build --release` to build an executable file,
 which is located in `/target/release`, which can be run in a terminal with `./rust_charset_extractor`
 > [!IMPORTANT]
-> By Default, this will parse an example String.
+> By default, this will parse an example String.
 > 
 > To set a custom input, pass in `-i INPUT` or`--input INPUT` (`-- -i INPUT` or `-- -input INPUT` when using `cargo run`, i.e. `cargo run -- --input INPUT`)
 >
