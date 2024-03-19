@@ -1,6 +1,6 @@
 # Rust Character Set Extractor
 
-Takes a UTF-8 encoded input String and returns all unique characters used in the file, in the order they appear.
+Takes a UTF-8 encoded input String and returns all unique characters used in the String, in the order they appear.
 Also returns the first of each type of whitespace that appears.
 
 Case-sensitive, optionally convert to either uppercase or lowercase with `--uppercase` or `--lowercase` respectfully.
