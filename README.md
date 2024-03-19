@@ -1,11 +1,16 @@
 # Rust Character Set Extractor
 
-Takes a plaintext `.txt` file and returns all unique characters used in the file, in the order they appear. Also returns the first whitespace that appears.
-Should work for any UTF-8 character.
+Takes a UTF-8 encoded input String and returns all unique characters used in the file, in the order they appear.
+Also returns the first of each type of whitespace that appears.
+
+Case-sensitive, optionally convert to either uppercase or lowercase with `--uppercase` or `--lowercase` respectfully.
 
 ## Usage
-Use it with `cargo run` or use `cargo build --release` to build an executable file, which is located in `/target/release`, which can be run in a terminal with `./rust_charset_extractor`
+Use with `cargo run` or use `cargo build --release` to build an executable file,
+which is located in `/target/release`, which can be run in a terminal with `./rust_charset_extractor`
 > [!IMPORTANT]
-> The plaintext `.txt` input file must be named `extract_from.txt` for the program to recognize it.
+> By Default, this will parse an example String.
+> 
+> To set a custom input, pass in `-i INPUT` or`--input INPUT` (`-- -i INPUT` or `-- -input INPUT` when using `cargo run`, i.e. `cargo run -- --input INPUT`)
 >
-> A sample is included, so you may just choose to change it's contents. 
+> Running with `--help` (`-- --help` when using `cargo run`) opens a help menu with instructions
