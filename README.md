@@ -4,10 +4,9 @@ Takes a UTF-8 encoded input String and returns all unique characters used in the
 Also returns the first of each type of whitespace that appears.
 
 Case-sensitive, optionally convert to either uppercase or lowercase with `--uppercase` or `--lowercase` respectfully.
-
 ## Usage
 Use with `cargo run` or use `cargo build --release` to build an executable file,
-which is located in `/target/release`, which can be run in a terminal with `./rust_charset_extractor`
+which is located in `/target/release`, which can be run in a terminal with `./rust_charset_extractor`. Precompiled binaries for x86_64-pc-windows-msvc (Windows 10, 11, etc.) can be found in Releases.
 > [!IMPORTANT]
 > By default, this will parse an example String.
 > 
