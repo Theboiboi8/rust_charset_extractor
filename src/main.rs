@@ -58,8 +58,9 @@ struct Arguments {
 
 /// Returns a [`String`] of every unique character in the input &str in the order they appear.
 /// Also returns the first of every type of whitespace
-fn extract_charset(input: &str) -> String {
+fn extract_charset(input: impl Into<&'a str>) -> String {
     let mut charset : String = String::new();
+    let input = input.into();
 
     for character in input.chars() {
         if !charset.contains(character) {
